@@ -1,0 +1,103 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+@import "welcome";
+/*@import "statistic_data";*/
+
+
+
+$sb-width: 300px;
+
+body{
+    overflow: hidden;
+}
+.navbar-default{
+    /*visibility: hidden;*/
+}
+
+#wrapper{
+    /*padding-bottom: $navbar-height;*/
+    padding-left: 0;
+    transition: all 0.5s ease;
+    /*background: grey;*/
+    background-color: #f8f8f8;
+    width: $sb-width;
+    margin-top: -21px;
+    margin-bottom: 0px;
+    height: 100%;
+    position: absolute;
+    border: 1px solid #e7e7e7;
+
+}
+
+#page-content-wrapper{
+    /*position: relative;*/
+    /*margin-left: $sb-width;*/
+    margin-top: -21px;
+    /*left: 0px;*/
+    /*top: 0px;*/
+
+    position: absolute;
+    margin-left: 300px;
+    /* margin-top: -21px; */
+    /* top: 0px; */
+    left: 0px;
+    width: calc(100% - 300px);
+    height: 100%;
+}
+
+.sb-nav{
+    margin-left: -1em;
+}
+
+.sb-nav .active{
+    background-color: blue;
+}
+
+.sidebar{
+    padding-right: 0px;
+}
+
+.subitem{
+    /*padding-left: 15px;*/
+    /*padding: 5px 10px;*/
+}
+
+.nb-brand{
+    padding-left: 0px; 
+}
+
+.navbar-header{
+    border: 1px solid #e7e7e7;
+    padding-left: 15px;
+    padding-right: 0px;
+    width: 299px;
+    margin-bottom: -1px;
+    margin-top: -1px;
+    border: 1px solid #e7e7e7;
+    background-color: #f8f8f8;
+}
+
+.navbar-default{
+    background-color: #fff;
+}
+
+
+
+
+
+.center{
+  text-align: center;
+}
+
+.right{
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
+
+.btn-right{
+    float: right;
+}

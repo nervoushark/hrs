@@ -1,0 +1,34 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
+    = csrf_meta_tags
+    = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = javascript_include_tag 'https://www.amcharts.com/lib/3/amcharts.js'
+    = javascript_include_tag 'https://www.amcharts.com/lib/3/serial.js'
+    / # = javascript_include_tag 'statistic_data'
+
+    %title HR-assistant
+  %body
+    %nav.navbar.navbar-default
+      .container-fluid.nb-brand
+        .navbar-header 
+          %a.navbar-brand{:href => "/"} HR-assistant
+        %p.navbar-text#nav-text
+    #wrapper
+      .sidebar.container-fluid
+        %ul.nav.sb-nav
+          %li
+            = link_to 'Обработчики', '#', class: "sb-nav-link"
+          %li 
+            = link_to 'События', '#', class: "sb-nav-link"
+          %li
+            = link_to 'Статистика', '#', class: "sb-nav-link"
+          %li 
+            %a{:href => "/"} Ошибки
+          / %li 
+          /   = link_to 'Keyword', keywords_path, class: "sb-nav-link"
+    #page-content-wrapper
+      .container-fluid
+        = yield
